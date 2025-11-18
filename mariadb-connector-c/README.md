@@ -8,8 +8,8 @@
 4. for fixing the issue at [ 36%] Linking C shared module remote_io.dll
 `patch -p1 < mariadb-connector-c.patch`
 5. create and use build dir
-`mkdir build ; cd build`
-`cmake .. -G "MSYS Makefiles" -D CMAKE_BUILD_TYPE=Release`
-`make -jX` (X=number of CPU cores you would like to spent during compilation)
-6. on my very slow and limited N4120 laptop the build process got stuck during compilation at 15% progress. If it happens, kill the process and restart.
-7. it should successfully compile until the end!
+`mkdir build ; cd build`<br>
+`cmake .. -G "MSYS Makefiles" -D CMAKE_BUILD_TYPE=Release`<br>
+`make -jX` (X=number of CPU cores you would like to spent during compilation)<br>
+7. on my very slow and limited N4120 laptop the build process got stuck during compilation at 15% progress. If it happens, kill the process and restart.
+8. it should successfully compile until the end!
