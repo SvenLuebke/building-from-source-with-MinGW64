@@ -1,0 +1,12 @@
+diff -ruN --exclude build mariadb-connector-c-3.4.7_orig/plugins/io/CMakeLists.txt mariadb-connector-c-3.4.7/plugins/io/CMakeLists.txt
+--- mariadb-connector-c-3.4.7_orig/plugins/io/CMakeLists.txt	2025-11-18 13:06:35.332090000 +0100
++++ mariadb-connector-c-3.4.7/plugins/io/CMakeLists.txt	2025-11-16 22:33:01.530008300 +0100
+@@ -10,7 +10,7 @@
+                   DEFAULT DYNAMIC
+                   SOURCES ${CC_SOURCE_DIR}/plugins/io/remote_io.c
+                   INCLUDES ${CURL_INCLUDE_DIR}
+-                  LIBRARIES ${CURL_LIBRARIES})
++                  LIBRARIES ${CURL_LIBRARIES} ws2_32)
+ 
+   ENDIF()
+ ENDIF()
